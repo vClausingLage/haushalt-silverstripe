@@ -1,11 +1,14 @@
 {
   "scripts": {
-    "css:build": "tailwindcss build -i app/client/src/styles/main.css -o themes/default/css/main.css"
+    "watch": "concurrently \"yarn run css:watch\" \"vite\" ",
+    "css:build": "tailwindcss build -i app/client/src/styles/main.css -o themes/default/css/main.css",
+    "css:watch": "tailwindcss --watch -i app/client/src/styles/main.css -o themes/default/css/main.css"
   },
   "dependencies": {
     "tailwindcss": "^3.4.7"
   },
   "devDependencies": {
+    "concurrently": "^8.2.2",
     "vite": "^5.3.5"
   }
 }

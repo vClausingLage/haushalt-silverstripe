@@ -5,26 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>$Title</title>
     <% require themedCSS('main') %>
-
 </head>
 <body>
-    <header>
+
+    <div class="container">
+
+        <h1 class="text-white text-2xl font-medium">Einkaufsliste</h1>
+
+
+    </div>
+
+
+
+    <%-- <header>
         <h1>$Title</h1>
-    </header>
+    </header> --%>
 
-    <nav>
-        <%-- <ul>
+    <%-- <nav>
+        <ul>
             $Breadcrumbs
-        </ul> --%>
-    </nav>
+        </ul>
+    </nav> --%>
 
-    <main>
+    <%-- <main>
         $Content
-    </main>
+    </main> --%>
 
-    <footer>
-        <p class="text-red-500">&copy; Footer</p>
-    </footer>
+    <%-- <footer> --%>
+        <%-- <p class="text-red-500">&copy; Footer</p> --%>
+    <%-- </footer> --%>
 
     <%-- <script src="script.js"></script> --%>
 </body>
