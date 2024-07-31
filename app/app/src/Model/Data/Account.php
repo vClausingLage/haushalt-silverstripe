@@ -15,32 +15,22 @@ class Account extends DataObject
     private static $table_name = 'Account';
 
     private static $db = [
-        // 'Date' => 'Date',
-        // 'PaymentParty' => 'Varchar(255)',
-        // 'IBAN' => 'Varchar(255)',
-        // 'PurposeOfUse' => 'Varchar(255)',
-        // 'Amount' => 'Int',
-        'Buchungstag' => 'Varchar(255)',
-        'Name_Zahlungsbeteiligter' => 'Varchar(255)',
-        'IBAN_Zahlungsbeteiligter' => 'Varchar(255)',
-        'Verwendungszweck' => 'Varchar(255)',
-        'Betrag' => 'Float',
+        'Date' => 'Date',
+        'PaymentParty' => 'Varchar(255)',
+        'IBAN' => 'Varchar(255)',
+        'PurposeOfUse' => 'Varchar(255)',
+        'Amount' => 'Int',
     ];
 
     private static $summary_fields = [
-        // 'Date' => 'Date',
-        // 'PaymentParty' => 'Payment Party',
-        // 'IBAN' => 'IBAN',
-        // 'PurposeOfUse' => 'Purpose Of Use',
-        // 'Amount' => 'Amount',
-        'Buchungstag',
-        'Name Zahlungsbeteiligter',
-        'IBAN Zahlungsbeteiligter',
-        'Verwendungszweck',
-        'Betrag'
+        'Date',
+        'PaymentParty',
+        'IBAN',
+        'PurposeOfUse',
+        'Amount',
     ];
 
-    // private static $default_sort = 'Date DESC';
+    private static $default_sort = 'Date DESC';
 
     public function getCMSFields(): FieldList
     {
