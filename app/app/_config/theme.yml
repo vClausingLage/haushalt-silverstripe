@@ -4,5 +4,6 @@ Name: mytheme
 SilverStripe\View\SSViewer:
   themes:
     - 'default'
+    - 'react'
     - '$public'
     - '$default'
