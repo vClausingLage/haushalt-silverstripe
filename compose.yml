@@ -2,7 +2,7 @@ services:
    silverstripe:
       image: brettt89/silverstripe-web:8.3-apache
       volumes:
-         - ./app:/var/www/html
+         - ./htdocs:/var/www/html
       depends_on:
          - database
       ports:
