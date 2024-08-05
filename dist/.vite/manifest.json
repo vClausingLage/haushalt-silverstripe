@@ -1,8 +1,0 @@
-{
-  "htdocs/input/index.js": {
-    "file": "a.js",
-    "name": "a",
-    "src": "htdocs/input/index.js",
-    "isEntry": true
-  }
-}
