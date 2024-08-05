@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace App\Controller;
 
+use SilverStripe\View\Requirements;
 use SilverStripe\CMS\Controllers\ContentController;
 
 class ReactPageController extends ContentController
@@ -13,7 +14,10 @@ class ReactPageController extends ContentController
     protected function init()
     {
         parent::init();
+
+        Requirements::javascript('themes/react/javascript/react.jsx');
+        Requirements::css('themes/react/css/main.css');
+
+        Requirements::set_force_js_to_bottom(true);
     }
-
-
 }

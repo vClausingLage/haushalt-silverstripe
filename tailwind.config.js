@@ -5,6 +5,7 @@ module.exports = {
     './themes/default/templates/**/*.html',
     './public/**/*.html',
     './src/**/*.js',
+    './src/**/*.jsx',
   ],
   theme: {
     extend: {},

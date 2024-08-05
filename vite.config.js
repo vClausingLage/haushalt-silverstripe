@@ -4,25 +4,30 @@ import path from 'path';
 export default defineConfig({
   build: {
     manifest: true,
+    emptyOutDir: false, // prevent clearing htdox folder
+    outDir: 'htdocs',
     rollupOptions: {
       input: {
-        'themes/indexing': 'htdocs/app/client/src/javascript/test.js',
-        'themes/react/main': 'htdocs/app/client/src/themes/react/main.js',
+        'admin': 'htdocs/app/client/src/javascript/admin/admin.js',
+        'default': 'htdocs/app/client/src/javascript/themes/default/main.js',
+        'react': 'htdocs/app/client/src/javascript/themes/react/main.jsx',
       },
       output: {
         entryFileNames: ({ name }) => {
           // Map the name to the desired output directory
           const outputPaths = {
-            'themes/indexing': 'htdocs/themes/indexing',
-            'themes/react/main': 'htdocs/themes/react/main',
+            'admin': 'app/client/dist/javascript/',
+            'default': 'themes/default/javascript/',
+            'react': 'themes/react/javascript/',
           };
 
           const outputPath = outputPaths[name];
           return path.join(outputPath, '[name].js');
         },
+        // dir: 'htdocs'
         // This setting should be left as it is or adjusted as per your directory structure
         // Setting `dir` to 'htdocs' will ensure all outputs are under this directory
-        dir: 'htdocs',
+        // dir: 'htdocs',
       },
     },
   },

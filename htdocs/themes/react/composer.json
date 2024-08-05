@@ -1,0 +1,22 @@
+{
+    "name": "silverstripe-themes/react",
+    "description": "React theme",
+    "type": "silverstripe-theme",
+    "keywords": [
+        "silverstripe",
+        "theme",
+        "React"
+    ],
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Dr. Vincent Clausing-Lage"
+        }
+    ],
+    "extra": {
+        "expose": [
+            "css",
+            "javascript"
+        ]
+    }
+}
