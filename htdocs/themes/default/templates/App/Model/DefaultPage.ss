@@ -4,14 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>$Title</title>
-    <% require themedCSS('main') %>
 </head>
 <body>
 
     <div class="container">
 
         <h1 class="text-white text-2xl font-medium">Einkaufsliste</h1>
-
 
     </div>
 

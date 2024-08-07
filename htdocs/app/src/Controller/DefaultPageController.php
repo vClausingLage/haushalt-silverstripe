@@ -5,9 +5,9 @@ declare(strict_types=1);
 namespace App\Controller;
 
 use SilverStripe\View\Requirements;
-use SilverStripe\CMS\Controllers\ContentController;
+use PageController;
 
-class DefaultPageController extends ContentController
+class DefaultPageController extends PageController
 {
     private static $allowed_actions = [];
 
@@ -15,9 +15,24 @@ class DefaultPageController extends ContentController
     {
         parent::init();
 
-        Requirements::javascript('themes/default/javascript/default.js');
-        Requirements::css('themes/default/css/main.css');
+        $this->getRequirements();
+    }
 
+    private function getRequirements(): void
+    {
+        // Custom head tags
+        // Requirements::insertHeadTags($this->owner->renderWith('App\Model\DefaultPage|HeadTags'));
+
+        // Css files
+        Requirements::themedCSS('dist/css/main');
+
+        // Js Files
         Requirements::set_force_js_to_bottom(true);
+        Requirements::themedJavascript('dist/javascript/index');
+    }
+
+    public function MOEP()
+    {
+        return 'MOEP';
     }
 }

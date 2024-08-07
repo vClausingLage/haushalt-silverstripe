@@ -33,5 +33,4 @@ class TestController extends Controller
         ];
         return HTTPResponse::create()->setBody(json_encode($return));
     }
-
 }
