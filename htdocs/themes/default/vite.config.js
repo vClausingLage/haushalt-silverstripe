@@ -2,6 +2,17 @@ import { defineConfig } from 'vite'
 import tailwindcss from 'tailwindcss'
 
 export default defineConfig({
+    server: {
+        origin: 'http://localhost:8080',
+        // proxy: {
+        //     // Proxying requests to /api to your Docker server on localhost:8080
+        //     '/': {
+        //       target: 'http://localhost:8080',
+        //       changeOrigin: true,
+        //       rewrite: (path) => path.replace(/^\//, '')
+        //     }
+        //   }
+    },
     css: {
         postcss: {
             plugins: [tailwindcss()],

@@ -11,7 +11,10 @@
 
         <h1 class="text-white text-2xl font-medium">Einkaufsliste</h1>
 
+
+        Hallo fdas
     </div>
+
 
 
 
@@ -34,5 +37,12 @@
     <%-- </footer> --%>
 
     <%-- <script src="script.js"></script> --%>
+
+    <!-- if development -->
+    <%-- <script type="module" src="http://localhost:5173/@vite/client"></script>
+    <script type="module" src="http://localhost:5173/dist/javascript/index.js"></script> --%>
+    <%-- manifest --%>
+    <%-- <script type="module" src="/"></script> --%>
+
 </body>
 </html>

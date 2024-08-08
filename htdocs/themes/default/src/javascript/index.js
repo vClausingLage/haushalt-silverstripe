@@ -1,1 +1,3 @@
-console.log('main from app client src default')
+import 'vite/modulepreload-polyfill'
+
+console.log('hello kdflö')

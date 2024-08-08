@@ -1,0 +1,1 @@
+{"version":3,"file":"index.js","sources":["../../src/javascript/index.js"],"sourcesContent":["import 'vite/modulepreload-polyfill'\n\nconsole.log('hello kdflö')\n"],"names":[],"mappings":"ssBAEA,QAAQ,IAAI,aAAa"}
